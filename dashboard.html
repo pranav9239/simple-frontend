@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — K8s Learning App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>Dashboard</h1>
+      <p class="tagline">Dynamic content (client-side)</p>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Live time</h2>
+        <p class="live-value" id="live-time">—</p>
+        <p class="muted-small">Updates every second</p>
+      </section>
+      <section class="card">
+        <h2>Random tip</h2>
+        <p class="live-value" id="random-tip">—</p>
+        <button type="button" class="btn" id="tip-btn">Next tip</button>
+      </section>
+      <section class="card">
+        <h2>Recent activity</h2>
+        <ul class="dynamic-list" id="activity-list"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>Deployed with Docker & Kubernetes</p>
+    </footer>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>

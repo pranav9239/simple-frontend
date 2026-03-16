@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K8s Learning App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>K8s Learning</h1>
+      <p class="tagline">Frontend running on Minikube</p>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Welcome</h2>
+        <p>This is a simple frontend app, containerized and ready to deploy on your local Minikube cluster.</p>
+      </section>
+      <section class="card">
+        <h2>Status</h2>
+        <p id="status">Checking connection...</p>
+      </section>
+    </main>
+    <footer>
+      <p>Deployed with Docker & Kubernetes</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
