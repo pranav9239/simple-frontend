@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>K8s Learning App</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>About — K8s Learning App</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <nav class="main-nav">
@@ -14,23 +14,22 @@
   </nav>
   <div class="container">
     <header>
-      <h1>K8s Learning</h1>
-      <p class="tagline">Frontend running on Minikube</p>
+      <h1>About</h1>
+      <p class="tagline">Static page with links</p>
     </header>
     <main>
       <section class="card">
-        <h2>Welcome</h2>
-        <p>This is a simple frontend app, containerized and ready to deploy on your local Minikube cluster.</p>
+        <h2>This app</h2>
+        <p>A minimal frontend for learning Kubernetes: containerized with Docker and deployed on Minikube. No backend — just static HTML, CSS, and a bit of client-side JavaScript.</p>
       </section>
       <section class="card">
-        <h2>Status</h2>
-        <p id="status">Checking connection...</p>
+        <h2>Stack</h2>
+        <p>HTML5, CSS3, vanilla JS. Served by nginx in an Alpine-based image. Use the Dashboard for live, client-side dynamic content.</p>
       </section>
     </main>
     <footer>
       <p>Deployed with Docker & Kubernetes</p>
     </footer>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>

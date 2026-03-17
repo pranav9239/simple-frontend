@@ -22,7 +22,7 @@ No backend; just HTML, CSS, and vanilla JavaScript.
 
 ## Run locally (no Docker)
 
-Open `index.html` in a browser, or serve the project root with any static server (e.g. `python3 -m http.server 8000`).
+From the repo root: `cd public && python3 -m http.server 8000`, then open http://localhost:8000. Or open `public/index.html` directly in a browser.
 
 ## Docker
 
@@ -58,12 +58,16 @@ docker push <your-username>/simple-frontend:latest
 
 ```
 .
-├── index.html      # Home
-├── about.html      # About page
-├── dashboard.html  # Dashboard (dynamic)
-├── dashboard.js    # Dashboard logic (clock, tips, activity)
-├── styles.css      # Shared styles
-├── script.js       # Home page script
-├── Dockerfile      # nginx:alpine image
-└── .dockerignore
+├── public/              # Static web assets (copied into image as nginx root)
+│   ├── index.html       # Home
+│   ├── about.html       # About page
+│   ├── dashboard.html   # Dashboard (dynamic)
+│   ├── css/
+│   │   └── styles.css   # Shared styles
+│   └── js/
+│       ├── script.js    # Home page script
+│       └── dashboard.js # Dashboard logic (clock, tips, activity)
+├── Dockerfile           # nginx:alpine image
+├── .dockerignore
+└── README.md
 ```
